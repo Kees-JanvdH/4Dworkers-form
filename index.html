@@ -233,31 +233,19 @@
 
               <p class="cta-text"></p>
 
-              <div id="contact-form" class="form">
+              <div class="form">
                 <form
                   class="cta-form"
-                  action="https://formsubmit.co/el/jamegu"
+                  action="https://formsubmit.co/info@keesjanvdhoven.nl"
                   method="POST"
+                  id="contact-form"
                 >
-                  <!-- Honeypot -->
-                  <input type="text" name="_honey" style="display: none" />
-
-                  <!-- Disable Captcha -->
-                  <input type="hidden" name="_captcha" value="false" />
-
-                  <!-- Succes message link -->
-
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value="https://kees-janvdh.github.io/4Dworkers-form/succes.html"
-                  />
-
                   <div class="form-input-field">
                     <label for="full-name">Naam</label>
                     <input
                       id="full-name"
-                      type="text"
+                      type="name"
+                      name="name"
                       placeholder="Naam"
                       required
                     />
@@ -268,6 +256,7 @@
                     <input
                       id="email"
                       type="email"
+                      name="email"
                       placeholder="text@voorbeeld.com"
                       required
                     />
@@ -278,6 +267,7 @@
                     <textarea
                       id="text"
                       type="text"
+                      name="text"
                       placeholder="Bericht"
                       style="height: 100px"
                       required
